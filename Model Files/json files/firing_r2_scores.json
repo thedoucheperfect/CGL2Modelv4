@@ -1,0 +1,6 @@
+{
+  "R2_scores_Firing": {
+    "Random Forest": 0.8958,
+    "XGBoost": 0.8815
+  }
+}

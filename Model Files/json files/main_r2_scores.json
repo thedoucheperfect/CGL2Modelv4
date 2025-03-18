@@ -1,0 +1,80 @@
+{
+  "R2_scores": {
+    "Speed": {
+      "Random Forest": 0.9863,
+      "XGBoost": 0.9828
+    },
+    "JCF": {
+      "Random Forest": 0.9562,
+      "XGBoost": 0.9577
+    },
+    "JCF1": {
+      "Random Forest": 1.0000,
+      "XGBoost": 1.0000
+    },
+    "JCF2": {
+      "Random Forest": 0.9678,
+      "XGBoost": 0.9782
+    },
+    "JCF3": {
+      "Random Forest": 0.9641,
+      "XGBoost": 0.9556
+    },
+    "JCF4": {
+      "Random Forest": 0.9611,
+      "XGBoost": 0.9708
+    },
+    "JCF5": {
+      "Random Forest": 0.9642,
+      "XGBoost": 0.9680
+    },
+    "NOF STRIP": {
+      "Random Forest": 0.9333,
+      "XGBoost": 0.9561
+    },
+    "RTF STRIP": {
+      "Random Forest": 0.9443,
+      "XGBoost": 0.9434
+    },
+    "JCFEN STRIP": {
+      "Random Forest": 0.9527,
+      "XGBoost": 0.9618
+    },
+    "% BL RPM": {
+      "Random Forest": 0.9808,
+      "XGBoost": 0.9892
+    },
+    "Pot Temperature": {
+      "Random Forest": 0.9541,
+      "XGBoost": 0.9264
+    },
+    "Pot Tension": {
+      "Random Forest": 0.9696,
+      "XGBoost": 0.9804
+    },
+    "NOF1": {
+      "Random Forest": 0.9589,
+      "XGBoost": 0.9650
+    },
+    "NOF2": {
+      "Random Forest": 0.9238,
+      "XGBoost": 0.9437
+    },
+    "NOF3": {
+      "Random Forest": 0.8692,
+      "XGBoost": 0.9332
+    },
+    "NOF4": {
+      "Random Forest": 0.8845,
+      "XGBoost": 0.8848
+    },
+    "NOF5": {
+      "Random Forest": 0.6685,
+      "XGBoost": 0.6524
+    }
+  },
+  "Average R2": {
+    "Random Forest": 0.9355,
+    "XGBoost": 0.9416
+  }
+}
