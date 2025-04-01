@@ -85,16 +85,16 @@
         <h2>Input Parameters</h2>
         <div class="grid-container">
             {% for name, value in inputs.items() %}
-            <div class="data-item">
-                <span class="data-label">{{ name|title }}</span>
-                <span class="data-value">
-                    {% if name == 'rm_grade' %}
-                        {{ value }}
-                    {% else %}
-                        {{ "%.2f"|format(value) }}
-                    {% endif %}
-                </span>
-            </div>
+                <div class="data-item">
+                    <span class="data-label">{{ name|title }}</span>
+                    <span class="data-value">
+                        {% if name == 'rm_grade' %}
+                            {{ value }}
+                        {% else %}
+                            {{ "%.2f"|format(value) }}
+                        {% endif %}
+                    </span>
+                </div>
             {% endfor %}
         </div>
     </div>
@@ -103,23 +103,41 @@
         <h2>Predicted Outputs</h2>
         <div class="grid-container">
             {% for name, value in outputs.items() %}
-            <div class="data-item">
-                <span class="data-label">{{ name }}</span>
-                <span class="data-value">
-                    {% if name in ['JCF','JCF1','JCF2','JCF3','JCF4','JCF5','NOF STRIP','RTF STRIP','JCFEN STRIP','Pot Temperature'] %}
-                        {{ value }} °C
-                    {% elif name == 'Speed' %}
-                        {{ value }} m/min
-                    {% else %}
-                        {{ value }}
-                    {% endif %}
-                </span>
-            </div>
+                <div class="data-item">
+                    <span class="data-label">
+                        {% if name == 'JCF' %}
+                            JCWT
+                        {% elif name == 'JCF1' %}
+                            JCWT1 HWT
+                        {% elif name == 'JCF2' %}
+                            JCWT2 HWT
+                        {% elif name == 'JCF3' %}
+                            JCWT3 HWT
+                        {% elif name == 'JCF4' %}
+                            JCWT4 HWT
+                        {% elif name == 'JCF5' %}
+                            JCWT5 HWT
+                        {% else %}
+                            {{ name }}
+                        {% endif %}
+                    </span>
+                    <span class="data-value">
+                        {% if name in ['JCF', 'JCF1', 'JCF2', 'JCF3', 'JCF4', 'JCF5', 'NOF STRIP', 'RTF STRIP', 'JCFEN STRIP', 'Pot Temperature'] %}
+                            {{ value }} °C
+                        {% elif name == 'Speed' %}
+                            {{ value }} m/min
+                        {% else %}
+                            {{ value }}
+                        {% endif %}
+                    </span>
+                </div>
             {% endfor %}
+            
             <div class="data-item">
                 <span class="data-label">Firing</span>
                 <span class="data-value">{{ firing }}%</span>
             </div>
+
             <div class="data-item">
                 <span class="data-label">TPH</span>
                 <span class="data-value">{{ tph }} tons/hour</span>
