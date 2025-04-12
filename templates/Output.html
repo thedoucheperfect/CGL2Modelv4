@@ -132,7 +132,25 @@
                     </span>
                 </div>
             {% endfor %}
-            
+
+            <!-- New Weather Data Items -->
+            <div class="data-item">
+                <span class="data-label">WBT</span>
+                <span class="data-value">
+                    {% if wbt_plus_4 is not none %}
+                        {{ "%.2f"|format(wbt_plus_4 - 4) }}°C
+                    {% else %}
+                        N/A
+                    {% endif %}
+                </span>
+            </div>
+
+            <div class="data-item">
+                <span class="data-label">Recommended JCWT</span>
+                <span class="data-value">{{ max_jcwt }}°C</span>
+            </div>
+
+            <!-- Existing Items -->
             <div class="data-item">
                 <span class="data-label">Firing</span>
                 <span class="data-value">{{ firing }}%</span>
