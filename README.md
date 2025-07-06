@@ -1,0 +1,2 @@
+This is a Predictive Machine Learning Model comprising of dual RandomForestRegressor + XGBoost Models to make accurate predictions for the controllable optimum Furnace Temperature values to stabilise the critical Pot temperature which is essential to prevent Zinc Coating defects which leads to lakhs of losses per year
+This Whole Model is wrapped around a Flask API with website made with the help HTML/CSS/Python, with the pretrained models being packaged neatly in form of .joblib files into the webapp and used in the webapp in an interface form convenient for the operators
